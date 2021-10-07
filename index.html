@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+       
+    </head>
+     
+<body>
+    <header class="container" >
+        <link rel="stylesheet" href="style.css"/>
+<script src="script.js"></script>
+
+       <h1> <strong >To DO List</strong></h1>
+    </header>
+    <div class="container">
+        <br>
+        <h2>Add Items</h2>
+        <label id="main" class="text-success" 
+                style="display: none;">
+        </label>
+        <form id="addForm">
+            
+            <div class="row">
+                <div>
+                <input type="text" onkeyup=
+                "toggleButton(this, 'submit')"
+                class="form-control" id="item" placeholder="Enter Text">
+            </div>
+            <div>
+                <input type="submit" class="btn btn-dark"
+                      id="submit" value="Submit" disabled >
+              </div>
+            
+              <h3 >Tasks</h3>
+   
+              <form id="addForm">
+                  <ul class="list-group" id="items" type="square" ></ul>
+              </form>
+    </div>
+        </form>
+
+
+
+</body>
+
+
+</html>
